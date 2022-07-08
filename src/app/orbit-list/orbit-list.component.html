@@ -6,7 +6,7 @@
         <th>Orbit Type</th>
         <th>Launch Date</th>
     </tr>
-    <tr *ngFor="let satellite of satellites" [class.data-row0]="satellites.indexOf(satellite)%2===0" [class.data-row1]="satellites.indexOf(satellite)%2>0">
+    <tr *ngFor="let satellite of satellites" class="data-row" [style.background]="dataRowColor">
             <td>{{satellite.name}}</td>
             <td [class.warning]="satellite.isSpaceDebris()">{{satellite.type}}</td>
             <td>{{satellite.operational}}</td>

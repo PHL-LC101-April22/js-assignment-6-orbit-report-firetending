@@ -27,10 +27,6 @@ th, td {
 	padding: 6px;
 }
 
-.data-row0{
-	background: lightgray;
-}
-
-.data-row1{
-	background: lightsteelblue;
+tr:nth-child(2n) {
+	background: tan;
 }
